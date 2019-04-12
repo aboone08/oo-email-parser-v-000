@@ -12,7 +12,7 @@ class EmailParser
 
   def parse #instance method
     array = @email.split(/[ , ]/).uniq #returns only unique emails 
-    array.reject! {|element| element.empty?}
+    array.reject! {|element| element.empty?} # removes duplicate emails
     array
   end
 end

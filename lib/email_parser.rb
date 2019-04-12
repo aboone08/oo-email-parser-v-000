@@ -10,7 +10,7 @@ class EmailParser
 
   def initialize(email)
     @email = email
-    @@all << email
+    @@all << email.parse(" , " || " ")
   end
 
 end
